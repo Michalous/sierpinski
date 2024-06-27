@@ -2,7 +2,6 @@ body, #canvas-container {
     background-color: black;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     align-items: center;
     justify-content: center;
     color: antiquewhite;
@@ -11,4 +10,10 @@ body, #canvas-container {
 canvas {
     border: 1px solid black;
     background-color: black;
+}
+
+@media (max-width: 620px) {
+    canvas {
+        transform: scale(0.53);
+    }
 }
